@@ -11,17 +11,18 @@
 <script src="http://natas.labs.overthewire.org/js/jquery-1.9.1.js"></script>
 <script src="http://natas.labs.overthewire.org/js/jquery-ui.js"></script>
 <script src=http://natas.labs.overthewire.org/js/wechall-data.js></script><script src="http://natas.labs.overthewire.org/js/wechall.js"></script>
-<script>var wechallinfo = { "level": "natas0", "pass": "natas0" };</script></head>
-<body>
-<h1>natas0</h1>
+<script>var wechallinfo = { "level": "natas1", "pass": "gtVrDuiDfck831PqWsLEZy5gyDz1clto" };</script></head>
+<body oncontextmenu="javascript:alert('right clicking has been blocked!');return false;">
+<h1>natas1</h1>
 <div id="content">
-You can find the password for the next level on this page.
+You can find the password for the
+next level on this page, but rightclicking has been blocked!
 
-<!--The password for natas1 is gtVrDuiDfck831PqWsLEZy5gyDz1clto -->
+<!--The password for natas2 is ZluruAthQk7Q2MqmDeTiUij2ZvWy2mBi -->
 </div>
 </body>
 </html>
 
 ----------------------------------------
-The password for natas1 is gtVrDuiDfck831PqWsLEZy5gyDz1clto
+The password for natas2 is ZluruAthQk7Q2MqmDeTiUij2ZvWy2mBi
 
