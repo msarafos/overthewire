@@ -1,0 +1,90 @@
+# output.
+
+[*] Status code: 200
+[*] Page source: <code>
+ <span style="color: #000000">
+  &lt;html&gt;
+  
+  &lt;head&gt;
+  
+  &lt;!-- This stuff in the header has nothing to do with the level --&gt;
+  
+  &lt;link rel="stylesheet" type="text/css" href="http://natas.labs.overthewire.org/css/level.css"&gt;
+  
+  &lt;link rel="stylesheet" href="http://natas.labs.overthewire.org/css/jquery-ui.css" /&gt;
+  
+  &lt;link rel="stylesheet" href="http://natas.labs.overthewire.org/css/wechall.css" /&gt;
+  
+  &lt;script src="http://natas.labs.overthewire.org/js/jquery-1.9.1.js"&gt;&lt;/script&gt;
+  
+  &lt;script src="http://natas.labs.overthewire.org/js/jquery-ui.js"&gt;&lt;/script&gt;
+  
+  &lt;script src=http://natas.labs.overthewire.org/js/wechall-data.js&gt;&lt;/script&gt;&lt;script src="http://natas.labs.overthewire.org/js/wechall.js"&gt;&lt;/script&gt;
+  
+  &lt;script&gt;var wechallinfo = { "level": "natas6", "pass": "&lt;censored&gt;" };&lt;/script&gt;&lt;/head&gt;
+  
+  &lt;body&gt;
+  
+  &lt;h1&gt;natas6&lt;/h1&gt;
+  
+  &lt;div id="content"&gt;
+  
+  
+  &lt;?
+  
+  
+  include "includes/secret.inc";
+  
+  
+  if(array_key_exists("submit", $_POST)) {
+  
+  if($secret == $_POST['secret']) {
+  
+  print "Access granted. The password for natas7 is &lt;censored&gt;";
+  
+  } else {
+  
+  print "Wrong secret";
+  
+  }
+  
+  }
+  
+  ?&gt;
+  
+  
+  &lt;form method=post&gt;
+  
+  Input secret: &lt;input name=secret&gt;&lt;br&gt;
+  
+  &lt;input type=submit name=submit&gt;
+  
+  &lt;/form&gt;
+  
+  
+  &lt;div id="viewsource"&gt;&lt;a href="index-source.html"&gt;View sourcecode&lt;/a&gt;&lt;/div&gt;
+  
+  &lt;/div&gt;
+  
+  &lt;/body&gt;
+  
+  &lt;/html&gt;
+  
+ </span>
+</code>
+----------------------------------------
+[*] Making a new request to the library provided.
+[*] Response: 
+<?
+$secret = "FOEIUWGHFEEUHOFUOIU";
+?>
+
+----------------------------------------
+The server provided us with a secret value which we are going to enter in the input field 
+of the main page of this level. Once done that, the server provides us the password for the next level
+with a message 'Access Granted'.
+
+----------------------------------------
+The password for natas7 is 7z3hEENjQtflzgnT29q7wAvMNfZdh0i9
+
+
