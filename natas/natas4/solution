@@ -5,4 +5,6 @@ Firstly, we send the GET request to Repeater and change the 'Referer: http://nat
 to 'Referer: http://natas5.natas.labs.overthewire.org/', because that's the only way we can get access to the 
 password for the next level.
 
+----------------------------------------
+The password for natas5 is iX6IOfmpN7AYOQGPwtn3fXpbaJVJcHfq
 
