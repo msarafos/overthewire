@@ -1,0 +1,86 @@
+# output.
+
+[*] Status code: 200
+[*] Sourcecode: <code>
+ <span style="color: #000000">
+  &lt;html&gt;
+  
+  &lt;head&gt;
+  
+  &lt;!-- This stuff in the header has nothing to do with the level --&gt;
+  
+  &lt;link rel="stylesheet" type="text/css" href="http://natas.labs.overthewire.org/css/level.css"&gt;
+  
+  &lt;link rel="stylesheet" href="http://natas.labs.overthewire.org/css/jquery-ui.css" /&gt;
+  
+  &lt;link rel="stylesheet" href="http://natas.labs.overthewire.org/css/wechall.css" /&gt;
+  
+  &lt;script src="http://natas.labs.overthewire.org/js/jquery-1.9.1.js"&gt;&lt;/script&gt;
+  
+  &lt;script src="http://natas.labs.overthewire.org/js/jquery-ui.js"&gt;&lt;/script&gt;
+  
+  &lt;script src=http://natas.labs.overthewire.org/js/wechall-data.js&gt;&lt;/script&gt;&lt;script src="http://natas.labs.overthewire.org/js/wechall.js"&gt;&lt;/script&gt;
+  
+  &lt;script&gt;var wechallinfo = { "level": "natas8", "pass": "&lt;censored&gt;" };&lt;/script&gt;&lt;/head&gt;
+  
+  &lt;body&gt;
+  
+  &lt;h1&gt;natas8&lt;/h1&gt;
+  
+  &lt;div id="content"&gt;
+  
+  
+  &lt;?
+  
+  
+  $encodedSecret = "3d3d516343746d4d6d6c315669563362";
+  
+  
+  function encodeSecret($secret) {
+  
+  return bin2hex(strrev(base64_encode($secret)));
+  
+  }
+  
+  
+  if(array_key_exists("submit", $_POST)) {
+  
+  if(encodeSecret($_POST['secret']) == $encodedSecret) {
+  
+  print "Access granted. The password for natas9 is &lt;censored&gt;";
+  
+  } else {
+  
+  print "Wrong secret";
+  
+  }
+  
+  }
+  
+  ?&gt;
+  
+  
+  &lt;form method=post&gt;
+  
+  Input secret: &lt;input name=secret&gt;&lt;br&gt;
+  
+  &lt;input type=submit name=submit&gt;
+  
+  &lt;/form&gt;
+  
+  
+  &lt;div id="viewsource"&gt;&lt;a href="index-source.html"&gt;View sourcecode&lt;/a&gt;&lt;/div&gt;
+  
+  &lt;/div&gt;
+  
+  &lt;/body&gt;
+  
+  &lt;/html&gt;
+  
+ </span>
+</code>
+[*] Decoded secret: b'oubWYf2kBq'
+
+----------------------------------------
+The password for natas9 is W0mMhUcRRnG8dcghE4qvk3JA9lGt8nDl.
+
