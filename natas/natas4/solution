@@ -1,6 +1,6 @@
 # solution.
 
-We open BurpSuite, in order to intercept the traffic going on between client and server.
+We launch BurpSuite, which will help us intercept the traffic going on between client and server.
 Firstly, we send the GET request to Repeater and change the 'Referer: http://natas4.natas.labs.overthewire.org/index.php'
 to 'Referer: http://natas5.natas.labs.overthewire.org/', because that's the only way we can get access to the 
 password for the next level.
