@@ -1,0 +1,30 @@
+# output.
+
+leviathan4@leviathan:~$ ls -al
+total 24
+drwxr-xr-x  3 root root       4096 Aug 26  2019 .
+drwxr-xr-x 10 root root       4096 Aug 26  2019 ..
+-rw-r--r--  1 root root        220 May 15  2017 .bash_logout
+-rw-r--r--  1 root root       3526 May 15  2017 .bashrc
+-rw-r--r--  1 root root        675 May 15  2017 .profile
+dr-xr-x---  2 root leviathan4 4096 Aug 26  2019 .trash
+leviathan4@leviathan:~$ cd .trash 
+leviathan4@leviathan:~/.trash$ ls -al
+total 16
+dr-xr-x--- 2 root       leviathan4 4096 Aug 26  2019 .
+drwxr-xr-x 3 root       root       4096 Aug 26  2019 ..
+-r-sr-x--- 1 leviathan5 leviathan4 7352 Aug 26  2019 bin
+leviathan4@leviathan:~/.trash$ file bin
+bin: setuid ELF 32-bit LSB executable, Intel 80386, version 1 (SYSV), dynamically linked, interpreter /lib/ld-linux.so.2, for GNU/Linux 2.6.32, BuildID[sha1]=00ce1aa55b0e691470f61baff0ee59a6c33fcb50, not stripped
+leviathan4@leviathan:~/.trash$ ./bin 
+01010100 01101001 01110100 01101000 00110100 01100011 01101111 01101011 01100101 01101001 00001010 
+leviathan4@leviathan:~/.trash$ # we have to convert this binary representation to a string.
+leviathan4@leviathan:~/.trash$ mkdir /tmp/dusu2
+leviathan4@leviathan:~/.trash$ cd /tmp/dusu2
+leviathan4@leviathan:/tmp/dusu2$ vim exploit.py # here write your exploit convertion script.
+leviathan4@leviathan:/tmp/dusu2$ python3 exploit.py 
+Tith4cokei
+
+--------------------------------------
+The password for leviathan5 is Tith4cokei
+
