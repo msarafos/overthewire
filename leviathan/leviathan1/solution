@@ -1,0 +1,9 @@
+# output.
+
+leviathan1@leviathan:~$ ./check 
+password: sex
+$ whoami
+leviathan2
+$ cat /etc/leviathan_pass/leviathan2
+ougahZi8Ta
+$ exit
