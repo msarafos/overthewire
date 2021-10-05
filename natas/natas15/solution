@@ -1,6 +1,5 @@
 # output.
 
-dusu@da3m0n:~/Desktop/.hackeries/wargames/natas$ python3 natas15_exploit.py 
 [*] Characters user to generate the password for the next level: acehijmnpqtwBEHINORW03569
 W
 Wa
@@ -38,4 +37,3 @@ WaIHEacj63wnNIBROHeqi3p9t0m5nhmh
 
 ----------------------------------------
 The password for natas16 is WaIHEacj63wnNIBROHeqi3p9t0m5nhmh
-
