@@ -1,0 +1,24 @@
+# test (PoC).
+
+--- snip ---
+<?php
+    $x = "8iloveyou";                   ---->          The output of the execution of this script is: 
+    $y = 10;                                           bool(false)
+    var_dump($x > $y);
+?>  
+--- snip ---
+
+
+
+--- snip ---
+<?php
+    $x = "15iloveyou";                   ---->         But, the output of the execution of this script is: 
+    $y = 10;                                           bool(true)
+    var_dump($x > $y);
+?>  
+--- snip ---
+
+So, the solution for the 'block'-condition-problem we have can be found above.
+Our PoC works!
+
+
