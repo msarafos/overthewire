@@ -1,0 +1,57 @@
+# output.
+
+[*] Status Code: 200
+[*] Session Cookie Value: osd9li54uq9kak4o0l648i7973
+[*] Response Text: 
+<html>
+<head><link rel="stylesheet" type="text/css" href="http://www.overthewire.org/wargames/natas/level.css"></head>
+<body>
+<h1>natas21 - CSS style experimenter</h1>
+<div id="content">
+<p>
+<b>Note: this website is colocated with <a href="http://natas21.natas.labs.overthewire.org">http://natas21.natas.labs.overthewire.org</a></b>
+</p>
+[DEBUG] Session contents:<br>Array
+(
+    [debug] => true
+    [submit] => Update
+    [admin] => 1
+)
+
+<p>Example:</p>
+<div style='background-color: yellow; text-align: center; font-size: 100%;'>Hello world!</div>
+<p>Change example values here:</p>
+<form action="index.php" method="POST">align: <input name='align' value='center' /><br>fontsize: <input name='fontsize' value='100%' /><br>bgcolor: <input name='bgcolor' value='yellow' /><br><input type="submit" name="submit" value="Update" /></form>
+<div id="viewsource"><a href="index-source.html">View sourcecode</a></div>
+</div>
+</body>
+</html>
+
+[*] Main Host Response Text: 
+<html>
+<head>
+<!-- This stuff in the header has nothing to do with the level -->
+<link rel="stylesheet" type="text/css" href="http://natas.labs.overthewire.org/css/level.css">
+<link rel="stylesheet" href="http://natas.labs.overthewire.org/css/jquery-ui.css" />
+<link rel="stylesheet" href="http://natas.labs.overthewire.org/css/wechall.css" />
+<script src="http://natas.labs.overthewire.org/js/jquery-1.9.1.js"></script>
+<script src="http://natas.labs.overthewire.org/js/jquery-ui.js"></script>
+<script src=http://natas.labs.overthewire.org/js/wechall-data.js></script><script src="http://natas.labs.overthewire.org/js/wechall.js"></script>
+<script>var wechallinfo = { "level": "natas21", "pass": "IFekPyrQXftziDEsUr3x21sYuahypdgJ" };</script></head>
+<body>
+<h1>natas21</h1>
+<div id="content">
+<p>
+<b>Note: this website is colocated with <a href="http://natas21-experimenter.natas.labs.overthewire.org">http://natas21-experimenter.natas.labs.overthewire.org</a></b>
+</p>
+
+You are an admin. The credentials for the next level are:<br><pre>Username: natas22
+Password: chG9fbe1Tq2eWVMgjYYD1MsfIvN461kJ</pre>
+<div id="viewsource"><a href="index-source.html">View sourcecode</a></div>
+</div>
+</body>
+</html>
+
+----------------------------------------
+The password for natas22 is chG9fbe1Tq2eWVMgjYYD1MsfIvN461kJ
+
