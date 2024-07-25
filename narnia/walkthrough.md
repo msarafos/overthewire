@@ -1170,7 +1170,7 @@ following, as we can see in gdb:
 In the above gdb snapshot, one can see that the `blah` pointer now has the correct value,
 which means that the rest of the payload after the address we appended 
 to our `A`s, will overflow stuff inside the stack. But, there is an important thing that 
-should be taken under consideration; If we decide to overflow lets say with 8 `\x42` bytes
+should be taken into consideration; If we decide to overflow lets say with 8 `\x42` bytes
 then the address of our `blah` pointer, should be:
 
     address of `blah` pointer with 20 `A` (0xffffd4f2) - 4 (address of `blah`) - 8 (`\x42` bytes)
