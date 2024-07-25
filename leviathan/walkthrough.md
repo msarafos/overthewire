@@ -278,9 +278,9 @@ with password
     *szo7HDB88w*
 
 one can find a binary expecting a 4 digit number as an argument and spawning a 
-shell with `leviathan7` privileges if given number is correct. A quick and straight-
-forward solution is to create a simple bruteforcing script under `/tmp/` which looks
-like this: 
+shell with `leviathan7` privileges if thegiven number is correct. A quick and 
+straightforward solution is to create a simple bruteforcing script under `/tmp/` 
+which looks like this: 
 
     for i in {0000..9999}
     do
