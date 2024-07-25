@@ -606,7 +606,7 @@ vulnerability. After investigating, one can see the following:
     buffer : [AAAA-41414141-3431342d-34313431-34332d31] (40)
     i = 1 (0xffffd2b0)
 
-The first `%x` identifier that is being putted inside the attacker's format string is 
+The first `%x` identifier that is being putted inside the attacker's format string 
 leaks the value of `A`s being placed also by the attacker inside the stack (`buffer` is 
 in the stack). Also the program helps us a bit, by leaking the address of `i` variable
 that we need to change in this case. So, by studying a bit about format strings and how
