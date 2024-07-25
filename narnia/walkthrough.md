@@ -812,7 +812,7 @@ can see from the snippet below,
     0x08049318 <+309>:	lea    eax,[ebp-0x14]
     0x0804931b <+312>:	push   eax
     0x0804931c <+313>:	mov    eax,DWORD PTR [ebp-0xc]
- => 0x0804931f <+316>:	call   eax
+    => 0x0804931f <+316>:	call   eax
     0x08049321 <+318>:	add    esp,0x4
     0x08049324 <+321>:	push   0x1
     0x08049326 <+323>:	call   0x8049080 <exit@plt>
