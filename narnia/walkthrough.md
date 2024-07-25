@@ -308,7 +308,7 @@ in order to spawn a shell and grab the password for the next level.
 
 **Note**: The shellcode had to be changed in order to get the uid of the user 
 executing the binary and then set it for the owner of the shell binary that will 
-be spawned [REF_2].
+be spawned.
 
 Password: **2xszzNl6uG**
 
@@ -1255,7 +1255,4 @@ CHALLENGE SOLVED!
 
 [REF_1]: http://shell-storm.org/shellcode/files/shellcode-607.html
 
-[REF_2]: https://security.stackexchange.com/questions/184842/shellcode-does-not-execute-as-the-owner
-
-[REF_3]: https://nicolagatta.blogspot.com/2019/05/overthewireorg-narnia-level-2-writeup.html
 
