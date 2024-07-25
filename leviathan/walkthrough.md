@@ -156,7 +156,7 @@ and rerunning the script with argument to be the file with spaces in its name,
     lala
     f0n8h2iWLP
 
-one can easily leak the password for the next level and continue with the challanges.
+one can easily leak the password for the next level and continue with the challenges.
 
 Password: **f0n8h2iWLP**
 
