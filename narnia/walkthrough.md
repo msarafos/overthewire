@@ -825,7 +825,7 @@ can see from the snippet below,
     0xffffd298:	0x00000000	0xf7da1cb9	0x00000003	0xffffd354
     0xffffd2a8:	0xffffd364	0xffffd2c0	0xf7fade34	0x080490ed
 
-that after running yhe program with argv[1] equal to `AAAAAAAA` and argv[2] equal to
+that after running the program with `argv[1]` equal to `AAAAAAAA` and argv[2] equal to
 `BBBBBBBB`, the `fp` pointer is located right after the `b1` character array, which means
 by overflowing `b1`, we can control the value of `fp`. A simple PoC of doing that is 
 by running the program once again like this: 
