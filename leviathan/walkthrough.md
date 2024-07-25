@@ -71,7 +71,7 @@ inside the binary.
 As one can easily notice from the above snippet, there is a `strcmp` call which checks
 for the equality of our input (only first 3 characters, `pas` in this case) with 
 the string `sex`. So after rerunning the binary and providing the `sex` password, one
-can spawn a shell with the priviliges of `leviathan2` and easily retrieve the password
+can spawn a shell with the privileges of `leviathan2` and easily retrieve the password
 for the next level.
 
     leviathan1@gibson:~$ ./check 
