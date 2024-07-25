@@ -53,7 +53,7 @@ a password string as user input and spawns a shell when this password is correct
     password: password 
     Wrong password, Good Bye ...
 
-One simple to debug this is use `ltrace` tool which basically traces all library calls
+One simple way to debug this is use `ltrace` tool which basically traces all library calls
 inside the binary.
 
     leviathan1@gibson:~$ ltrace ./check 
