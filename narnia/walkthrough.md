@@ -621,7 +621,7 @@ tested by using the PoC shown below:
 
 Here, the address of `i` is being pushed onto the stack, a hexadecimal value with length
 of 100 is also placed in the format string, which means that 104 bytes are written so far, 
-and the `%1\$n` writes the number of characters printed so far (100) to the memory location 
+and the `%1\$n` writes the number of characters printed so far (104) to the memory location 
 pointed to by the first argument.
 
 **Note**: `\` is used inside `%1\$n` in order for `$` to be escaped.
