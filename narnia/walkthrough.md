@@ -1163,12 +1163,12 @@ following, as we can see in gdb:
     Breakpoint 1, 0x080491e7 in func ()
     (gdb) x/16wx $esp
     0xffffd274:	0x41414141	0x41414141	0x41414141	0x41414141
-    0xffffd284:	0x41414141 [0xffffd4ee]	0xffffd298	0x08049201
-    0xffffd294:[0xffffd4ee]	0x00000000	0xf7da1cb9	0x00000002
+    0xffffd284:	0x41414141  0xffffd4ee	0xffffd298	0x08049201
+    0xffffd294:   0xffffd4ee	0x00000000	0xf7da1cb9	0x00000002
     0xffffd2a4:	0xffffd354	0xffffd360	0xffffd2c0	0xf7fade34
 
-In the above gdb snapshot, one can see that the `blah` pointer now has the correct value
-(inside brackets), which means that the rest of the payload after the address we appended 
+In the above gdb snapshot, one can see that the `blah` pointer now has the correct value,
+which means that the rest of the payload after the address we appended 
 to our `A`s, will overflow stuff inside the stack. But, there an important thing that we 
 should be taken under consideration; If we decide to overflow lets say with 8 `\x42` bytes
 then the address of our `blah` pointer, should be:
