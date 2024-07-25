@@ -296,7 +296,7 @@ The snippet below can show how one can find the opcode (0xffe4) of "jmp $esp" in
     0xf7ea395d <__GI_init_module+45>
     1 pattern found.
 
-The address "0xf7ea395d" is where we need to return and after that one should 
+The address "0xf7ea395d" is where we need to return and after that, one should 
 append their shellcode. Now, outside gdb one can execute, the following command 
 in order to spawn a shell and grab the password for the next level.
 
