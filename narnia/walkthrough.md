@@ -595,7 +595,7 @@ one can find the source code for `narnia5` binary under /narnia, which is the fo
             return 0;
     }
 
-In the above code, there is no buffer overflow as the call the `snprintf` writes data 
+In the above code, there is no buffer overflow as the call to `snprintf` writes data 
 from `argv[1]` to `buffer` of a specific length, which is `strlen(buffer)-1`, securing 
 the unavailability to overflowing and crashing the program. What is interesting though, 
 is the fact that `argv[1]` is writen DIRECTLY to the `buffer`, causing a format string
