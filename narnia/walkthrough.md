@@ -73,9 +73,9 @@ After running the program inside gdb and providing this input
     AAAABBBBCCCCDDDDEEEEFFFFGGGG
 
 we notice that the value inside ebp-0x8 is 0x46464646 which is `FFFF`. Thus, our
-padding is `lengthOf("AAAABBBBCCCCDDDDEEEE")` which is equal to 20. After that, the 
-`deadbeef` bytes need to be appended, in order to trigger the shell spawning. 
-The below line of shell code aids us for this purpose.
+padding is `lengthOf("AAAABBBBCCCCDDDDEEEE")` bytes long which is equal to 20. 
+After that, the `deadbeef` bytes need to be appended, in order to trigger the 
+shell spawning. The below line of shell code aids us for this purpose.
 
     (echo -e "AAAAAAAAAAAAAAAAAAAA\xef\xbe\xad\xde"; cat;)
 
